@@ -65,7 +65,8 @@ export class PlaceDetailPage implements OnInit {
     this.modalCtrl.create({
       component: CreateBookingComponent,
       componentProps: {
-        selectedPlace: this.place
+        selectedPlace: this.place,
+        selectedMode: mode
       },
       animated: true,
     }).then(modalEl => {
